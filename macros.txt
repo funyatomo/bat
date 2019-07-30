@@ -1,0 +1,9 @@
+cd=if "$1"="" ( cd %userprofile% ) else ( cd $* ) $t title %cd%
+open=if "$1"=="" ( explorer .\ ) else ( explorer $* )
+ll=dir $*
+l=dir /b $*
+ls=dir /w $*
+pwd=cd
+cat=type $*
+rm=del $*
+quit=exit
